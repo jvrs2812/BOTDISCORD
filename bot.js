@@ -31,4 +31,4 @@ app.post('/log',async function(req,res){
   }
 })
 
-app.listen(3333);
+app.listen(process.env.PORT);
