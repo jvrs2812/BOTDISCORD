@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "nodemon --exec babel-node bot.js"
+  },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
     "config": "^3.3.6",
