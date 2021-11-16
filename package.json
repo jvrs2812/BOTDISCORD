@@ -1,12 +1,13 @@
 {
   "scripts": {
     "start": "node bot.js",
-    "build": "webpack" 
+    "build": "webpack"
   },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
     "config": "^3.3.6",
     "discord.js": "^13.3.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "webpack": "^5.64.1"
   }
 }
