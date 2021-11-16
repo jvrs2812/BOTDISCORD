@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "nodemon --exec babel-node bot.js"
+    "start": "node bot.js",
+    "build": "webpack" 
   },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
