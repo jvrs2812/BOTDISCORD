@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "node bot.js",
-    "build": "webpack"
+    "start": "node bot.js"
   },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
