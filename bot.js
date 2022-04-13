@@ -8,15 +8,15 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login('OTEwMTMzODEzNTQ2NDc1NTMw.YZOaKg._10mllAaKAhtQj1t433tY1oDTYY');
+client.login(process.env.LOGIN);
 
 const app = express();
 app.use(express.json());
-app.use(basicAuth('HURON', 'savana@')); 
+app.use(basicAuth(process.env.AUTH_LOGIN, process.env.AUTH_PASS)); 
 
 app.post('/log',async function(req,res){
   try{
-    const channel = await client.channels.fetch('910133499351150603');
+    const channel = await client.channels.fetch(process.env.CHANNEL);
     
     var msg = req.body.message;
 
